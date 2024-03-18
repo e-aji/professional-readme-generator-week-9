@@ -15,10 +15,13 @@ function init (){
 
     inquirer 
         .prompt(questions)
-        .then((data) => {
-            const markdown = generateMarkdown(data);
+        .then((answers) => {
+            const markdown = generateMarkdown(answers);
             writeToFile(markdown);
         })
+        .catch((error) => {
+            console.error(error);
+        });
 
 }
 
