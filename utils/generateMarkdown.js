@@ -1,3 +1,13 @@
+
+const renderLicenseBadge = (license) => {
+    
+}
+
+
+const renderLicenseLink = (license) => {
+    
+}
+
 const generateMarkdown = (data) => {
 
     return `
@@ -50,7 +60,7 @@ const generateMarkdown = (data) => {
         To conduct necessary tests, run this command:
 
         \'\'\
-        ${data.tests}
+        ${data.test}
         \'\'\
 
         ## Questions
