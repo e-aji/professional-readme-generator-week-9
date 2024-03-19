@@ -1,6 +1,6 @@
 
 function renderLicenseBadge (license) {
-
+    
     let licenseBadge = '';
 
     switch(license) {
@@ -60,16 +60,16 @@ function renderLicenseSection (license) {
     switch(license) {
 
         case 'MIT':
-            licenseSection = `This project is licensed under the MIT license.`;
+            licenseSection = `This project is licensed under the MIT license at:`;
             break;
         case 'APACHE 2.0':
-            licenseSection = `This project is licensed under the Apache 2.0 license.`;
+            licenseSection = `This project is licensed under the Apache 2.0 license at:`;
             break;
         case 'GPL 3.0':
-            licenseSection = `This project is licensed under the GPL 3.0 license.`;
+            licenseSection = `This project is licensed under the GPL 3.0 license at:`;
             break;
         case 'BSD 3':
-            licenseSection = `This project is licensed under the BSD 3 license.`;
+            licenseSection = `This project is licensed under the BSD 3 license at:`;
             break;
         default:
             licenseSection = '';
@@ -84,58 +84,58 @@ function renderLicenseSection (license) {
 const generateMarkdown = (data) => {
 
     return `
-        # ${data.title}
+# ${data.title}
 
-        ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
-        ## Description
+## Description
 
-        ${data.description}
+${data.description}
 
-        ## Table of Contents
+## Table of Contents
 
-        * [Installation](#installation)
-        * [Usage](#usage)
-        ${renderLicenseLink(data.license)}
-        * [License](#license)
-        * [Contribution](#contribution)
-        * [Tests](#tests)
-        * [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contribution](#contribution)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+
+To install required dependencies, run:
+
+${data.installation}
 
 
-        ## Installation
+## Usage
 
-        To install required dependencies, run this command:
+${data.usage}
 
-        \'\'\
-        ${data.installation}
-        \'\'\
+${renderLicenseSection(data.license)} ${renderLicenseLink(data.license)}
 
-        ## Usage
-        ${data.usage}
+## License
 
-        ${renderLicenseSection(data.license)}
+${data.license}
 
-        ## License
-        ${data.license}
 
-        ## Contribution
+## Contribution
 
-        ${data.contribution}
+${data.contribution}
 
-        ## Tests
 
-        To conduct necessary tests, run this command:
+## Tests
 
-        \'\'\
-        ${data.test}
-        \'\'\
+To test this project:
 
-        ## Questions
+${data.tests}
 
-        if you have any questions about this repo, contact me directly at ${data.email}. 
-        You can find more of my work at [${data.github}](https://github.com/${data.github}).
-        `;
+
+## Questions
+
+If you have any questions about this repo, contact me directly at [${data.email}](malto:${data.email}) . 
+You can find more of my work at [${data.github}](https://github.com/${data.github}).
+`;
   };
   
-  module.exports = generateMarkdown;
+module.exports = generateMarkdown;
