@@ -60,16 +60,16 @@ function renderLicenseSection (license) {
     switch(license) {
 
         case 'MIT':
-            licenseSection = `This project is licensed under the MIT license (${licenseLink}).`;
+            licenseSection = `This project is licensed under the MIT license.`;
             break;
         case 'APACHE 2.0':
-            licenseSection = `This project is licensed under the Apache 2.0 license (${licenseLink}).`;
+            licenseSection = `This project is licensed under the Apache 2.0 license.`;
             break;
         case 'GPL 3.0':
-            licenseSection = `This project is licensed under the GPL 3.0 license (${licenseLink}).`;
+            licenseSection = `This project is licensed under the GPL 3.0 license.`;
             break;
         case 'BSD 3':
-            licenseSection = `This project is licensed under the BSD 3 license (${licenseLink}).`;
+            licenseSection = `This project is licensed under the BSD 3 license.`;
             break;
         default:
             licenseSection = '';
