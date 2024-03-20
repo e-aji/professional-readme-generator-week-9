@@ -33,7 +33,7 @@ const questions = [
 
     {
         type: 'input',
-        name: 'contribution',
+        name: 'contributing',
         message: 'What does the user need to know about contributing to this application'
     },
 

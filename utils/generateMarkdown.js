@@ -97,7 +97,7 @@ ${data.description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contribution](#contribution)
+- [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -119,21 +119,21 @@ ${renderLicenseSection(data.license)} ${renderLicenseLink(data.license)}
 ${data.license}
 
 
-## Contribution
+## Contributing
 
-${data.contribution}
+${data.contributing}
 
 
 ## Tests
 
-To test this project:
+To test this project, run:
 
 ${data.tests}
 
 
 ## Questions
 
-If you have any questions about this repo, contact me directly at [${data.email}](malto:${data.email}) . 
+If you have any questions about this repo, contact me directly at [${data.email}](malto:${data.email}). 
 You can find more of my work at [${data.github}](https://github.com/${data.github}).
 `;
   };
