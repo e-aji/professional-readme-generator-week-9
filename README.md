@@ -47,7 +47,13 @@ THEN I am taken to the corresponding section of the README
 
 ## Images 
 
+Terminal input 
 
+![README Gen Terminal](https://github.com/e-aji/professional-readme-generator-week-9/assets/156595423/fa720c1b-6d2f-4989-b7ac-43672eff1c2a)
+
+README.md Generated 
+
+<img width="879" alt="README md Generated" src="https://github.com/e-aji/professional-readme-generator-week-9/assets/156595423/8c2d6c43-6407-4c4c-a8ed-3511fd87ad20">
 
 
 ## Links 
