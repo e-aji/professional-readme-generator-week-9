@@ -35,13 +35,13 @@ THEN I am taken to the corresponding section of the README
 
 ## Usage 
 
->   *  Run node index.js in the terminal 
+*  Run node index.js in the terminal 
 
->   * Input the answers to the question that coincide with the following sections: Title, Description, Installation, License, Usage, Contributing, Tests and Questions.
+* Input the answers to the question that coincide with the following sections: Title, Description, Installation, License, Usage, Contributing, Tests and Questions.
 
->   * Once all the questions have been answered in the terminal, a README.md file should be generated with the above sections.  
+* Once all the questions have been answered in the terminal, a README.md file should be generated with the above sections.  
 
->   * When each section in the Table of Contents it links to the corresponding section in the file.
+* When each section in the Table of Contents it links to the corresponding section in the file.
 
 
 
